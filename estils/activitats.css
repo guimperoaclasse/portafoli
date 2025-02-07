@@ -1,0 +1,28 @@
+* {
+    font-family: sans-serif, Times;
+}
+
+header {
+    text-align-last: center;
+}
+
+section {
+    border: solid 100px black; 
+    border-radius: 50%;
+}
+#contacte {
+    display:flex;
+    justify-content: center;
+}
+
+#contacte p {
+    align-content: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 50px;
+    color:  black;
+}
+
+#contacte div {
+    align-content: center;
+}

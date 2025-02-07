@@ -3,6 +3,7 @@
 }
 #top {
     display: flex;
+    justify-content: center;
 }
 #top div {
     background-color: #e6fcf1;
@@ -24,6 +25,8 @@
 }
 
 #info_top {
+    justify-content: center;
+    align-content: center;
     height: 150px;
     width:300px;
     border:solid black 5px;
@@ -37,6 +40,8 @@
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 17px;
+    
 }
 
 #info_top i:hover {
@@ -69,8 +74,12 @@ section {
     margin-top: 10px;
     margin-left: 50px;
     margin-right: 50px;
-    background-color: #e6fcf1;
-    border-radius: 2%;
+}
+
+footer {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #taula_body {
@@ -91,4 +100,35 @@ section {
 #sobre_mi_dreta b:hover {
     text-decoration: underline;
     color: #5f5ff1;
+}
+
+#activitats {
+    align-content: center;
+    text-align: center;
+    border: solid black;
+    border-radius: 10px;
+    height: 50px;
+}
+
+#activitats:hover {
+    background-color: #e6fcf1; 
+    border: solid #cfcfe2;
+    color:darkgrey;
+}
+
+#contacte {
+    display:flex;
+    justify-content: center;
+}
+
+#contacte p {
+    align-content: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 50px;
+    color:  black;
+}
+
+#contacte div {
+    align-content: center;
 }
