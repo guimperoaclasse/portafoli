@@ -1,11 +1,12 @@
 * {
-    background-color: #e6fcf1;
     font-family: sans-serif, Times;
 }
 #top {
     display: flex;
 }
-
+#top div {
+    background-color: #e6fcf1;
+}
 #imatge_top {
     height: 150px;
     width:150px;
@@ -66,12 +67,15 @@
 
 section {
     margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #taula_body {
     display:grid;
     grid-template-columns: 0.2fr 0.8fr;
     grid-gap:5px;
+    
 }
 
 #dades_academiques_esquerra, #dades_academiques_dreta{
