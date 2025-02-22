@@ -2,12 +2,58 @@
     font-family: sans-serif, Times;
 }
 
+body {
+    background-image: url(../imatges/backgroundActivitats.jpg);
+
+}
+
 header {
     text-align-last: center;
 }
 
+header h1 {
+    background-color:white;
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity: 80%;
+    height: 100px;
+    align-content: center;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+header a {
+    color:black;
+}
+
+header a:hover {
+    color:blue;
+}
+header .fa-home {
+    z-index: 1; /*Posar al davant*/
+    position: fixed; 
+    top: 20px; 
+    right: 20px;
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+    opacity: 100%;
+}
+
+header .fa-home:hover {
+  background-color: #0056b3; 
+}
+
 section{
-    margin:50px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    padding: 5px;
+    background-color: white;
+    opacity: 80%;
 }
 
 #llista_activitats_html, #llista_activitats_css{
@@ -23,12 +69,25 @@ section{
     padding: 3px;
 }
 
-#llista_activitats_html summary:hover {
+#llista_activitats_html summary:hover, #llista_activitats_css summary:hover {
     background-color: #cfcfe2;
     color:white;
     border:solid black;
 }
 
+
+li p a{
+    font-size: 20px;
+    color:black;
+}
+
+li p a:hover {
+    color:blue;
+}
+
+footer {
+    background-color: white;
+}
 #contacte {
     display:flex;
     justify-content: center;
