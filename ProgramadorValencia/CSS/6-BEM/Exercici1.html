@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercici 1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo"><p>Logo</p></div>
+            <div id="navegador">
+                <nav>
+                    <a href="#model">Buscar per model</a>
+                    <a href="#tipus">Tipus</a>
+                    <a href="#preu">Preu</a>
+                    <a href="#segona_ma">Buscar de segona mà</a>
+                </nav>
+            </div>
+            <div id="formulari">
+                <form>
+                    <input type="text" placeholder="Buscar per model" id="model">
+                    <i class="fa fa-search"></i>
+                    <h2>Tria el tipus:</h2>
+                    <select name="tipus" id="tipus">
+                        <option value="compacta">Càmara compacta</option>
+                        <option value="bridge">Càmara bridge</option>
+                        <option value="dslr">Càmara DSLR o Réflex</option>
+                        <option value="mirroless">Càmara Mirroless</option>
+                        <option value="mig_format">Càmara de mig format</option>
+                        <option value="analogica">Càmara analògica</option>
+                        <option value="accio">Càmara d'acció</option>
+                        <option value="instantania">Càmara instantània</option>
+                        <option value="360">Càmara 360</option>
+                    </select>
+                    <h2 id="preu">Preu:</h2>
+                    <input type="number" placeholder="màxim">
+                    <input type="range" min="0" max="9999">
+                    <h4 id="segona_ma">Busca també de segona mà</h4>
+                    <input type="checkbox">
+                </form>
+            </div>        
+        </header>
+    </body>
+</html>

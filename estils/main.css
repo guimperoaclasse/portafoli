@@ -1,119 +1,78 @@
-* {
-    font-family: sans-serif, Times;
+body {
+    font-family: sans-serif;
+    background-image: url(../imatges/background.jpg);
 }
+
+body header {
+    position:sticky;
+    display: block;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* El color de fondo de tu header */
+    color: white; 
+    border:solid white 2px;
+    z-index: 1000;
+}
+
 #top {
-    display: flex;
+    display:flex;
     justify-content: center;
-}
-#top div {
-    background-color: #e6fcf1;
-}
-#imatge_top {
-    height: 150px;
-    width:150px;
-    border:solid black 5px;
-    border-top-left-radius: 10%; 
-    border-bottom-left-radius: 10%;
+    align-items: center;
+    background-color:#7db7e8;
+    opacity: 80%;
+    text-decoration: none;
+    height: 70px;
 }
 
-#text_top {
-    height: 150px;
-    width:1000px;
-    border:solid black 5px;
-    border-left: 0px;
-    border-bottom: solid black 5px;
+ #top div {
+     height: 100%;
+     width:15%;
+     background-color: #7db7e8;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     color:black;
 }
 
-#info_top {
-    justify-content: center;
-    align-content: center;
-    height: 150px;
-    width:300px;
-    border:solid black 5px;
-    border-top-right-radius: 10%; 
-    border-bottom-right-radius: 10%;
-    border-left: 0px;
+#top a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
     font-size: 20px;
 }
 
-#info_top i{
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 17px;
-    
+#top #esquerra {
+    width:55%;
 }
 
-#info_top i:hover {
-    text-decoration: underline;
+#top div:hover {
+    background-color: #fff;
+    transition: background-color 2s ease;
 }
 
-#imatge_top img{
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    margin-right: 5%;
-    height:90%;
-    border-radius: 50%;
-    border: solid black 2px;
+#nom {
+    justify-content: center;
+    display:grid;
+    grid-template-columns:  0.33fr 0.33fr 0.33fr;
+    font-size: 120px;
+    font-weight: 900;
+    text-shadow: 10px 10px 20px #fff;
 }
 
-#imatge_top img:hover {
-    border: solid orange 2px;
-}
-
-#text_top h1, #text_top h2{
+section p {
     text-align: center;
-}
-
-#professio:hover {
-    color:#5f5ff1;
-}
-
-section {
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 50px;
+    font-weight: 800;
 }
 
 footer {
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-#taula_body {
-    display:grid;
-    grid-template-columns: 0.2fr 0.8fr;
-    grid-gap:5px;
-    
-}
-
-#dades_academiques_esquerra, #dades_academiques_dreta{
-    border-top: 2px dashed  #cfcfe2;
-}
-
-#dades_academiques_esquerra, #dades_academiques_dreta, #idiomes_esquerra, #idiomes_dreta, #experiencia_esquerra, #experiencia_dreta, #sobre_mi_esquerra, #sobre_mi_dreta {
-    border-bottom: 2px dashed  #cfcfe2;
-}
-
-#sobre_mi_dreta b:hover {
-    text-decoration: underline;
-    color: #5f5ff1;
-}
-
-#activitats {
-    align-content: center;
-    text-align: center;
-    border: solid black;
-    border-radius: 10px;
-    height: 50px;
-}
-
-#activitats:hover {
-    background-color: #e6fcf1; 
-    border: solid #cfcfe2;
-    color:darkgrey;
+    background-color: white;
 }
 
 #contacte {
@@ -131,4 +90,27 @@ footer {
 
 #contacte div {
     align-content: center;
+}
+
+
+/* Animació nom */
+
+#nomText {
+  position: relative; /*Posicionem correctament el "after"*/
+  display: inline-block;
+}
+
+#nomText::after {
+    content:''; /*No caldrà contingur per a funcionar*/
+    position: absolute;
+    bottom: 0; /*Posicionar linia a sota*/
+    left: 0;
+    width: 0%; /* Valor inicial*/
+    height: 2px; /* Gruix de la línia*/
+    background-color: #fff; /* Color de la línia */
+    transition: width 0.5s ease; /* Animación para cambiar el ancho */
+}
+
+#nomText:hover::after {
+  width: 100%; /*Llargada final al fer hover*/
 }
